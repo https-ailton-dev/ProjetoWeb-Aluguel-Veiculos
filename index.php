@@ -31,6 +31,9 @@
         h2{
             text-align: left;
         }
+        h3{
+            text-align: center;
+        }
         p{
             font-size: 1.6rem;
             padding: 10px;
@@ -50,6 +53,10 @@
             font-size: 1.6rem;
             text-align: center;
             background-color: #FFFFFF;
+        }
+        img{
+            width: 85%;
+            height: 80%;
         }
 
     </style>
@@ -84,9 +91,25 @@
 
             <div class="grid">
 
-                <div>Conteúdo 1</div>
-                <div>Conteúdo 2</div>
-                <div>Conteúdo 3</div>
+                <div>
+                    <h3>Modelo de Carros Hatch</h3>
+                    <img src="img/hatch.png" alt="Modelo Hatch"><br>
+                    <a href="hatch.html">Alugue Agora</a>
+                </div>
+
+
+                <div>
+                    <h3>Modelo de Carros Sedan</h3>
+                    <img src="img/sedan.png" alt="Modelo Sedan"><br>
+                    <a href="sedan.html">Alugue Agora</a>
+                </div>
+
+                <div>
+                    <h3>Modelo de Carros SUV</h3>
+                    <img src="img/suv.png" alt="Modelo SUV"><br>
+                    <a href="suv.html">Alugue Agora</a>
+                </div>
+
                 <div>Conteúdo 4</div>
                 <div>Conteúdo 5</div>
                 <div>Conteúdo 6</div>
