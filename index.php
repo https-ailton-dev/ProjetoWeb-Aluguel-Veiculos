@@ -65,8 +65,23 @@
             text-decoration: none;
         }
         fieldset{
-            border: #000;
+            border: solid;
             padding: 3%;
+            font-size: 1.7rem;
+            font-weight: bold;
+            text-align: left;
+        }
+        select{
+            border-radius: 10px;
+            border: solid;
+            padding: 5px;
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+        option{
+            font-size: 1.7rem;
+            font-weight: bold;
+            padding: 5px;
         }
 
     </style>
@@ -138,10 +153,8 @@
 
     <section>
 
-       <fieldset>
-
-        <legend>
-
+        <fieldset>
+    
             <h2>Faça seu orçamento!</h2>
 
             <form action="aluguel.php" method="post" target="">
@@ -152,8 +165,8 @@
                 <label for="data">Data de Orçamento</label><br>
                 <input type="date" id="data" name="date" ><br><br>
 
-                <label for="tempo">Tempo de Reserva</label><br>
-                <input type="number" id="tempo" name="tempo" min="1" max="6"><br><br>
+                <label for="tempo">Tempo de Reserva (Dias)</label><br>
+                <input type="number" id="tempo" name="tempo" min="1" max="6" placeholder="1"><br><br>
 
                 <label>Escolha o Modelo</label><br>
                 <select>
@@ -169,9 +182,7 @@
                 <input type="submit" name="Enviar" value="OK"><br>
             </form>
 
-        </legend>
-
-       </fieldset> 
+        </fieldset>
 
     </section>
 
