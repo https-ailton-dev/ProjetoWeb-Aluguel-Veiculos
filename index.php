@@ -64,6 +64,10 @@
             font-weight: bold;
             text-decoration: none;
         }
+        fieldset{
+            border: #000;
+            padding: 3%;
+        }
 
     </style>
 
@@ -131,6 +135,47 @@
     </section>
 
     <br>
+
+    <section>
+
+       <fieldset>
+
+        <legend>
+
+            <h2>Faça seu orçamento!</h2>
+
+            <form action="aluguel.php" method="post" target="">
+
+                <label for="nomeCliente">Nome</label><br>
+                <input type="text" id="nomeCliente" name="name" placeholder="Insira seu nome completo"><br><br>
+
+                <label for="data">Data de Orçamento</label><br>
+                <input type="date" id="data" name="date" ><br><br>
+
+                <label for="tempo">Tempo de Reserva</label><br>
+                <input type="number" id="tempo" name="tempo" min="1" max="6"><br><br>
+
+                <label>Escolha o Modelo</label><br>
+                <select>
+                    <option>Hatch</option>
+                    <option>Sedan</option>
+                    <option>SUV</option>
+                </select>
+                <br><br>
+
+                <label for="obs">Observações</label><br>
+                <input type="text" id="obs" name="obs" placeholder="Insira observações necessárias"><br><br>
+
+                <input type="submit" name="Enviar" value="OK"><br>
+            </form>
+
+        </legend>
+
+       </fieldset> 
+
+    </section>
+
+    <br><br>
 
     <footer>
         <h3>Desenvolvedor Ailton Daniel</h3>
