@@ -58,6 +58,12 @@
             width: 85%;
             height: 80%;
         }
+        a{
+            font-size: 1.7rem;
+            color: #6A5ACD;
+            font-weight: bold;
+            text-decoration: none;
+        }
 
     </style>
 
@@ -110,9 +116,11 @@
                     <a href="suv.html">Alugue Agora</a>
                 </div>
 
+                <!--
                 <div>Conteúdo 4</div>
                 <div>Conteúdo 5</div>
                 <div>Conteúdo 6</div>
+                -->
 
             </div>
 
