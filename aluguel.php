@@ -153,36 +153,28 @@
 
     <section>
 
-        <fieldset>
-    
-            <h2>Faça seu orçamento!</h2>
+        <?php
 
-            <form action="aluguel.php" method="post" target="">
+            $name = $_POST["name"];
+            $date = $_POST["date"];
+            $tempo = $_POST["tempo"];
+            $modelo = $_POST["modelo"];
+            $obs = $_POST["obs"];
 
-                <label for="nomeCliente">Nome</label><br>
-                <input type="text" id="nomeCliente" name="name" placeholder="Insira seu nome completo"><br><br>
+            echo "Olá Sr.  $name.<br><br>";
+            echo "Agradecemos sua preferência.<br><br>";
+            echo "Informações do seu pedido:<br><br>";
+            echo "<p>Modelo: $modelo</p>
+                <p>Data de reserva: $date</p>
+                <p>Duração da reserva: $tempo</p>";
+            echo "<p>Observações adicionais:</p>
+            <p>$obs</p>";
 
-                <label for="data">Data de Orçamento</label><br>
-                <input type="date" id="data" name="date" ><br><br>
 
-                <label for="tempo">Tempo de Reserva (Dias)</label><br>
-                <input type="number" id="tempo" name="tempo" min="1" max="6" placeholder="1"><br><br>
+        ?>
 
-                <label>Escolha o Modelo</label><br>
-                <select name="modelo">
-                    <option>Hatch</option>
-                    <option>Sedan</option>
-                    <option>SUV</option>
-                </select>
-                <br><br>
-
-                <label for="obs">Observações</label><br>
-                <input type="text" id="obs" name="obs" placeholder="Insira observações necessárias"><br><br>
-
-                <input type="submit" name="Enviar" value="OK"><br>
-            </form>
-
-        </fieldset>
+        <br><br>
+        <a href="index.php">Voltar</a>
 
     </section>
 
