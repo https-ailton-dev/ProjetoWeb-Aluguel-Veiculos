@@ -6,15 +6,29 @@
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Desenvolvimento Web</title>
+
+    <style type="text/css">
+
+        section{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+
+    </style>
+
 </head>
 <body>
 
     <header>
         <h3>Programação Web</h3>
-        <h4>Desenvolvimento</h4>
     </header>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
 
     <section >
         <h1>Projeto Desenvolvido por Ailton Daniel</h1><br>
@@ -32,36 +46,21 @@
 
         <br><br>
       
-        <section class="container" id="grid-container">   
+        <section>   
 
-            <div class="grid">
+           
+            <h3>Modelo de Carros Hatch</h3>
+            <img src="img/sedan.png" alt="Modelo Sedan"><br>
 
-                <div>
-                    <h3>Modelo de Carros Hatch</h3>
-                    <img src="img/hatch.png" alt="Modelo Hatch"><br>
-                    <a href="hatch.php">Alugue Agora</a>
-                </div>
+            <h2>Carro para toda família</h2>
 
+            <p>Com seu espaço interno e um generoso porta-malas, sedans são a opção ideal para famílias que usam o carro para suas tarefas diárias ou 
+            para viagens de longa duração. Um sedan comporta confortavelmente as crianças e até mesmo animais de estimação, se necessário.</p>
+                    
+            <p>As principal vantagem em adquirir um carro sedan é o conforto, oferecido por um espaço interno maior, e a capacidade do porta-malas — 
+            ideal para quem possui filhos e precisa de mais espaço para as bagagens.</p>
 
-                <div>
-                    <h3>Modelo de Carros Sedan</h3>
-                    <img src="img/sedan.png" alt="Modelo Sedan"><br>
-                    <a href="sedan.php">Alugue Agora</a>
-                </div>
-
-                <div>
-                    <h3>Modelo de Carros SUV</h3>
-                    <img src="img/suv.png" alt="Modelo SUV"><br>
-                    <a href="suv.php">Alugue Agora</a>
-                </div>
-
-                <!--
-                <div>Conteúdo 4</div>
-                <div>Conteúdo 5</div>
-                <div>Conteúdo 6</div>
-                -->
-
-            </div>
+            <a href="index.php">Voltar</a>
 
         </section>
 
@@ -90,9 +89,7 @@
 
                 <label>Escolha o Modelo</label><br>
                 <select name="modelo">
-                    <option>Hatch</option>
                     <option>Sedan</option>
-                    <option>SUV</option>
                 </select>
                 <br><br>
 

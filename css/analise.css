@@ -1,0 +1,15 @@
+.formulario{
+    background-color: #808080;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    padding: 10px;
+    font-size: 1.8rem;
+}
+input{
+    font-size: 1.7rem;
+    padding: 4px;
+    border-radius: 10px;
+}
+h3{
+    text-align: left;
+}

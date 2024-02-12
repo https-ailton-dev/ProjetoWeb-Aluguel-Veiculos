@@ -4,25 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/analise.css">
     <title>Desenvolvimento Web</title>
-
-    <style type="text/css">
-        .formulario{
-            background-color: #808080;
-            color: #fff;
-            text-shadow: 1px 1px #000;
-            padding: 10px;
-            font-size: 1.8rem;
-        }
-        input{
-            font-size: 1.7rem;
-            padding: 4px;
-            border-radius: 10px;
-        }
-        h3{
-            text-align: left;
-        }
-    </style>
 
 </head>
 <body>

@@ -6,15 +6,29 @@
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Desenvolvimento Web</title>
+
+    <style type="text/css">
+
+    section{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: justify;
+    }
+
+</style>
+
 </head>
 <body>
 
     <header>
         <h3>Programação Web</h3>
-        <h4>Desenvolvimento</h4>
     </header>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
 
     <section >
         <h1>Projeto Desenvolvido por Ailton Daniel</h1><br>
@@ -32,36 +46,21 @@
 
         <br><br>
       
-        <section class="container" id="grid-container">   
+        <section>   
 
-            <div class="grid">
+            <h3>Modelo de Carros SUV</h3>
+            <img src="img/suv.png" alt="Modelo SUV"><br>
 
-                <div>
-                    <h3>Modelo de Carros Hatch</h3>
-                    <img src="img/hatch.png" alt="Modelo Hatch"><br>
-                    <a href="hatch.php">Alugue Agora</a>
-                </div>
+            <h2>SUV</h2>
+            <p>Em sua definição básica, SUV é a sigla para 'Sport Utility Vehicle', ou 'Veículo Utilitário Esportivo', ou seja, um carro 
+            destinado a carga/trabalho, como as picapes, mas com uma tocada mais esportiva. Normalmente é equipado com tração nas quatro rodas 
+            e caracteristicamente de porte avantajado.</p>
+                    
+            <p>Qual a diferença de um carro SUV?</p>
+            <p>Os SUVs são veículos que têm mais adaptabilidade a diferentes terrenos, são mais altos e robustos e, também, confortáveis e arrojados. 
+            <p>O motor, no geral, é mais potente e alguns modelos têm, ainda, a opção de tração 4×4.</p>
 
-
-                <div>
-                    <h3>Modelo de Carros Sedan</h3>
-                    <img src="img/sedan.png" alt="Modelo Sedan"><br>
-                    <a href="sedan.php">Alugue Agora</a>
-                </div>
-
-                <div>
-                    <h3>Modelo de Carros SUV</h3>
-                    <img src="img/suv.png" alt="Modelo SUV"><br>
-                    <a href="suv.php">Alugue Agora</a>
-                </div>
-
-                <!--
-                <div>Conteúdo 4</div>
-                <div>Conteúdo 5</div>
-                <div>Conteúdo 6</div>
-                -->
-
-            </div>
+            <a href="index.php">Voltar</a>
 
         </section>
 
@@ -90,8 +89,6 @@
 
                 <label>Escolha o Modelo</label><br>
                 <select name="modelo">
-                    <option>Hatch</option>
-                    <option>Sedan</option>
                     <option>SUV</option>
                 </select>
                 <br><br>

@@ -4,87 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/aluguel.css">
     <title>Desenvolvimento Web</title>
-
-    <style type="text/css">
-        header{
-            position: fixed;
-            width: 100%;
-        }
-        .formulario{
-            
-            color: #000;
-            text-shadow: 1px 1px #000;
-            padding: 10px;
-            font-size: 1.8rem;
-            text-align: right;
-        }
-        input{
-            font-size: 1.7rem;
-            padding: 4px;
-            border-radius: 10px;
-            border: solid;
-        }
-        h1{
-            text-align: center;
-        }
-        h2{
-            text-align: left;
-        }
-        h3{
-            text-align: center;
-        }
-        p{
-            font-size: 1.6rem;
-            padding: 10px;
-        }
-        #grid-container{
-            background-color: #ADD8E6;
-        }
-        .grid{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: 5px;
-            max-width: 1200px;
-            margin: 0 auto;
-           
-        }
-        .grid div{
-            font-size: 1.6rem;
-            text-align: center;
-            background-color: #FFFFFF;
-        }
-        img{
-            width: 85%;
-            height: 80%;
-        }
-        a{
-            font-size: 1.7rem;
-            color: #6A5ACD;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        fieldset{
-            border: solid;
-            padding: 3%;
-            font-size: 1.7rem;
-            font-weight: bold;
-            text-align: left;
-        }
-        select{
-            border-radius: 10px;
-            border: solid;
-            padding: 5px;
-            font-size: 1.7rem;
-            font-weight: bold;
-        }
-        option{
-            font-size: 1.7rem;
-            font-weight: bold;
-            padding: 5px;
-        }
-
-    </style>
 
 </head>
 <body>
@@ -161,14 +82,29 @@
             $modelo = $_POST["modelo"];
             $obs = $_POST["obs"];
 
-            echo "Olá Sr.  $name.<br><br>";
-            echo "Agradecemos sua preferência.<br><br>";
-            echo "Informações do seu pedido:<br><br>";
+            $modelo1 = $tempo*100;
+            $modelo2 = $tempo*200;
+            $modelo3 = $tempo*300;
+
+            echo "<p>Olá Sr.  $name.<br></p>";
+            echo "<p>Agradecemos sua preferência.<br></p>";
+            echo "<p>Informações do seu pedido:<br></p>";
             echo "<p>Modelo: $modelo</p>
-                <p>Data de reserva: $date</p>
+                <p>Data de reserva: $date. OBS: Orçamento válido por 15 dias após esta data.</p>
                 <p>Duração da reserva: $tempo</p>";
-            echo "<p>Observações adicionais:</p>
-            <p>$obs</p>";
+
+            if($modelo == "Hatch"){
+                echo "<p>O Valor total do orçamento é $modelo1<br></p>";
+            }
+            elseif($modelo == "Sedan"){
+                echo "<p>O Valor total do orçamento é $modelo2<br></p>";
+            }
+            else{
+                echo "<p>O Valor total do orçamento é $modelo3<br></p>";
+            }
+
+            echo "<p>Observações adicionais:</p><br>
+                <p>$obs</p>";
 
 
         ?>

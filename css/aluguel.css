@@ -1,0 +1,76 @@
+header{
+    position: fixed;
+    width: 100%;
+}
+.formulario{
+    
+    color: #000;
+    text-shadow: 1px 1px #000;
+    padding: 10px;
+    font-size: 1.8rem;
+    text-align: right;
+}
+input{
+    font-size: 1.7rem;
+    padding: 4px;
+    border-radius: 10px;
+    border: solid;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: left;
+}
+h3{
+    text-align: center;
+}
+p{
+    font-size: 1.6rem;
+    padding: 10px;
+}
+#grid-container{
+    background-color: #ADD8E6;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+.grid div{
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+img{
+    width: 85%;
+    height: 80%;
+}
+a{
+    font-size: 1.7rem;
+    color: #6A5ACD;
+    font-weight: bold;
+    text-decoration: none;
+}
+fieldset{
+    border: solid;
+    padding: 3%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: left;
+}
+select{
+    border-radius: 10px;
+    border: solid;
+    padding: 5px;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+option{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 5px;
+}
